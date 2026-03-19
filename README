@@ -1,0 +1,15 @@
+📁 .mvn/                                                 --> Maven wrapper files — ignore this for now (auto-generated)
+📁src/                                                   --> ALL your code lives here
+📁main/                                                  --> Your actual application code
+📁java/com/taskmanager/                                  --> Your Java source files go here
+📁controller/ you create                                 --> Handles HTTP requests — your "waiters"
+📁service/ you create                                    --> Business logic — the "chef" deciding what to do
+📁repository/ you create                                 --> Database queries — talks to MySQL
+📁model/ you create                                      --> Your data objects (User, Task) — the "forms"
+📁dto/ you create                                        --> Data Transfer Objects — what the API sends/receives
+📁security/ you create                                   --> JWT + login config lives here
+☕TaskManagerApiApplication.java auto-generated           --> The "main door" — this starts your app
+📁resources/                                             --> Config files, not Java code
+⚙️application.properties auto-generated                  --> Database URL, port, passwords go here
+📁test/                                                  --> Test files go here — very important for companies
+📄pom.xml auto-generated                                 --> The "shopping list" — lists all your dependencies
