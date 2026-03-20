@@ -13,3 +13,22 @@
 ⚙️application.properties auto-generated                  --> Database URL, port, passwords go here
 📁test/                                                  --> Test files go here — very important for companies
 📄pom.xml auto-generated                                 --> The "shopping list" — lists all your dependencies
+
+DTO means Data Transfer Object — it's just a simple container that holds the data coming IN from the user or going OUT to the user.
+Think of it like a form.
+
+src/main/java/com/taskmanager/
+│
+├── dto/
+│   ├── RegisterRequest.java      ← what user sends to register
+│   ├── LoginRequest.java         ← what user sends to login
+│   └── AuthResponse.java         ← what we send back (the token)
+│
+├── security/
+│   └── JwtUtil.java              ← creates and reads JWT tokens
+│
+├── service/
+│   └── AuthService.java          ← business logic (hash password, check login)
+│
+└── controller/
+    └── AuthController.java       ← the API endpoints (/register, /login)

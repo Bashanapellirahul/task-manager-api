@@ -18,6 +18,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     Optional<User> findByEmail(String email);
     // Spring sees "findByEmail" → runs: SELECT * FROM users WHERE email = ?
+
     boolean existsByUsername(String username);
     // Spring sees "existsByUsername" → runs: SELECT COUNT(*) FROM users WHERE username = ?
 
